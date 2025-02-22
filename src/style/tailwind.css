@@ -1,0 +1,184 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .container {
+    @apply max-w-[1200px] mx-auto;
+  }
+  .container-sm {
+    @apply max-w-[800px] mx-auto;
+  }
+  .flex-fullcenter {
+    @apply flex justify-center items-center;
+  }
+  .flex-seperate {
+    @apply flex justify-between items-center;
+  }
+  .bg {
+    @apply bg-gradient-to-bl from-blue-500 to-blue-700 shadow-lg;
+  }
+  .button {
+    @apply transition duration-200 lg:text-sm text-center font-semibold backdrop-blur-sm text-sm rounded-xl md:w-auto inline-block w-full px-10 py-2;
+  }
+  .button-outline * {
+    @apply bg-transparent;
+  }
+  .button-outline-light {
+    @apply text-slate-50  fakeBorderLight hover:bg-slate-50 hover:text-slate-800;
+  }
+  .button-outline-dark {
+    @apply text-slate-950 bg-transparent fakeBorderDark hover:bg-slate-900 hover:text-slate-200;
+  }
+  .button-outline-blue {
+    @apply text-blue-600 bg-transparent fakeBorderBlue hover:bg-blue-600 hover:text-blue-100;
+  }
+  .button-light {
+    @apply text-slate-900 bg-slate-100 bg-opacity-90 hover:bg-opacity-100;
+  }
+  .button-dark {
+    @apply text-slate-100 bg-slate-950 bg-opacity-90 hover:bg-opacity-100;
+  }
+  .button-blue {
+    @apply text-slate-100 bg-blue-500 bg-opacity-90 hover:bg-opacity-100;
+  }
+  .bg-fullcenter {
+    @apply bg-center bg-cover bg-no-repeat;
+  }
+  .bg-fullobject {
+    @apply object-center object-cover;
+  }
+  .navitem {
+    @apply transition text-sm font-semibold rounded px-3 py-2  bg-opacity-0 hover:bg-opacity-40 hover:bg-slate-500 hover:backdrop-blur-sm;
+  }
+  .title {
+    @apply md:text-3xl text-lg font-extrabold;
+  }
+  .title-res {
+    @apply md:text-3xl text-lg font-extrabold;
+  }
+  .title-sm {
+    @apply md:text-xl text-lg font-extrabold;
+  }
+  .title-lg {
+    @apply md:text-5xl text-3xl font-extrabold;
+  }
+  .title-super {
+    @apply lg:text-7xl md:text-5xl text-2xl font-extrabold;
+  }
+  .field {
+    @apply bg-slate-200 text-slate-900 border-0 text-sm rounded-xl transition-all duration-100 focus-within:ring-1 focus-within:ring-blue-600 block w-full px-3 py-2;
+    @apply autofill:bg-slate-300 autofill:text-blue-900;
+  }
+  .select {
+    @apply bg-blue-500 text-blue-50 accent-white border-0 text-sm rounded-full transition-all duration-100 focus-within:ring-0 block w-full p-3 min-w-44;
+  }
+  .label {
+    @apply text-slate-700 md:text-sm text-xs font-bold;
+  }
+  .para {
+    @apply opacity-90 md:text-sm text-xs text-justify max-w-[800px];
+  }
+  .para-sm {
+    @apply opacity-90 md:text-xs text-[8px] text-justify max-w-[800px];
+  }
+  .warn {
+    @apply mac-border bg text-slate-50;
+  }
+  .mac-border {
+    @apply border-2 border-blue-400 rounded-[25px] px-4;
+  }
+  .mac-bg {
+    background: rgb(59, 130, 246);
+    background: linear-gradient(
+      90deg,
+      rgba(59, 130, 246, 1) 0%,
+      rgba(59, 130, 246, 0.3537146931950568) 68%,
+      rgba(59, 130, 246, 0.20976369778923742) 100%
+    );
+    @apply px-5 rounded-full inline-block;
+  }
+  .thatch {
+    @apply bg-blue-950 border-2 border-blue-800;
+  }
+  .box {
+    @apply md:p-10 p-5 mac-border;
+  }
+  .card {
+    @apply bg text-slate-100 border-2 border-slate-200 size-full flex p-12 rounded-3xl;
+  }
+}
+@layer utilities {
+  .fakeBorderDark {
+    box-shadow: 0 0 0 2px var(--color_dark) inset;
+  }
+
+  .fakeBorderLight {
+    box-shadow: 0 0 0 2px var(--color_light) inset;
+  }
+
+  .fakeBorderBlue {
+    box-shadow: 0 0 0 2px var(--color_prime) inset;
+  }
+
+  .halfbg-right {
+    background: linear-gradient(109.6deg, transparent 20%, #3b82f6 98%);
+    @apply pr-5 rounded-full;
+  }
+
+  .halfbg-left {
+    background: linear-gradient(109deg, #3b82f6 -20%, transparent 70%);
+    @apply pl-5 rounded-full;
+  }
+  .padding {
+    @apply md:px-16 px-6 md:py-24 py-12;
+  }
+
+  .padding-x {
+    @apply sm:px-16 px-6;
+  }
+
+  .padding-y {
+    @apply sm:py-24 py-12;
+  }
+
+  .padding-l {
+    @apply sm:pl-16 pl-6;
+  }
+
+  .padding-r {
+    @apply sm:pr-16 pr-6;
+  }
+
+  .padding-t {
+    @apply sm:pt-24 pt-12;
+  }
+
+  .padding-b {
+    @apply sm:pb-24 pb-12;
+  }
+
+  .info-text {
+    @apply font-montserrat text-slate-gray text-lg leading-7;
+  }
+  .pagecenter {
+    @apply max-w-[800px] mx-auto pt-24 padding-x;
+  }
+  .size-screen {
+    @apply w-screen h-screen;
+  }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-bold;
+}
+select.field {
+  @apply py-2;
+}
+textarea.field {
+  @apply py-2;
+}

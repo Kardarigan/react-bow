@@ -1,0 +1,23 @@
+$color_prime: #f3f4f4;
+$color_second: #4b79a1;
+$color_dark: #171a20;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.unset {
+  all: unset !important;
+}
+
+.displayTrans {
+  transition: visibility 0.5s, opacity 0.1s linear;
+}
