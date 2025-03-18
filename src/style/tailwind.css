@@ -4,12 +4,9 @@
 
 @layer components {
   .container {
-    @apply max-w-[1200px] mx-auto p-5;
+    @apply lg:max-w-[1180px] md:max-w-[950px] sm:max-w-[700px] mx-auto p-5;
   }
-  .container-sm {
-    @apply max-w-[800px] mx-auto;
-  }
-  .flex-fullcenter {
+  .flex-center {
     @apply flex justify-center items-center;
   }
   .flex-seperate {

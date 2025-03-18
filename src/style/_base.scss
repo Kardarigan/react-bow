@@ -2,12 +2,17 @@ $color_prime: #f3f4f4;
 $color_second: #4b79a1;
 $color_dark: #171a20;
 
+@font-face {
+  font-family: Peyda;
+  src: url(../asset/font/Peyda.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-family: Arial, sans-serif;
+  font-family: Peyda, sans-serif;
 }
 
 html {
