@@ -1,12 +1,7 @@
-$color_prime: #f3f4f4;
-$color_second: #4b79a1;
-$color_dark: #171a20;
-
 @font-face {
   font-family: Peyda;
   src: url(../asset/font/Peyda.ttf);
 }
-
 * {
   margin: 0;
   padding: 0;
@@ -27,33 +22,31 @@ html {
   transition: visibility 0.5s, opacity 0.1s linear;
 }
 
-.flex-center {
+.flex-center, .loading {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .loading {
-  @extend .flex-center;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  color: $color_dark;
-  background-color: $color_prime;
+  color: #171a20;
+  background-color: #f3f4f4;
   font-size: 24px;
   transition: opacity 0.1s ease-in-out;
   opacity: 0;
   pointer-events: none;
   z-index: 1000;
-
-  &-enter {
-    opacity: 1;
-    pointer-events: all;
-  }
-  &-exit {
-    opacity: 0;
-    pointer-events: none;
-  }
 }
+.loading-enter {
+  opacity: 1;
+  pointer-events: all;
+}
+.loading-exit {
+  opacity: 0;
+  pointer-events: none;
+}/*# sourceMappingURL=main.css.map */

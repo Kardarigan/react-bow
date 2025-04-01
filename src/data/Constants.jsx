@@ -28,3 +28,21 @@ export const NavItems = [
   { label: "علمی مهارتی", href: "#" },
   { label: "کسب و کار", href: "#" },
 ];
+
+export const HomeMainSlides = [
+  {
+    label: "برترین کتاب های علمی",
+    href: "#",
+    colorClass: "bg-rose-500",
+  },
+  {
+    label: "تازه‌ترین کتاب های رمانس",
+    href: "#",
+    colorClass: "bg-yellow-500",
+  },
+  {
+    label: "کتاب های روانشناسی انگلیسی",
+    href: "#",
+    colorClass: "bg-blue-500",
+  },
+];
