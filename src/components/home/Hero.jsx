@@ -4,7 +4,19 @@ import { Carousel } from "../index";
 const Hero = () => {
   return (
     <section className="case flex-seperate">
-      <Carousel type="image" things={HomeMainSlides} />
+      <div className="rounded-2xl overflow-hidden">
+        <Carousel
+          type="image"
+          things={HomeMainSlides}
+          options={{
+            perMove: 1,
+            type: "loop",
+            arrows: false,
+            autoplay: true,
+            focus: "center",
+          }}
+        />
+      </div>
     </section>
   );
 };

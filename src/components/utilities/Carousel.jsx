@@ -2,7 +2,7 @@ import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import { Link } from "react-router-dom";
 
-const Carousel = ({ type, things, options, interval = "2000" }) => {
+const Carousel = ({ type = "image", things, options, interval = "2000" }) => {
   return (
     <Splide aria-label="infantry-class-slider" dir="ltr" options={options}>
       {Array.isArray(things) &&
@@ -10,13 +10,9 @@ const Carousel = ({ type, things, options, interval = "2000" }) => {
           return (
             <SplideSlide key={index} data-splide-interval={interval}>
               {type === "image" ? (
-                <div>
-                  <Link to={item.path}>
-                    <img
-                      src={item.cover}
-                      alt="Event Banner"
-                      className="w-full h-screen bg-fullobject"
-                    />
+                <div className={item.colorClass + " h-[50vh] min-h-72 block"}>
+                  <Link to={item.href} className="size-full flex-center">
+                    <h3 className="title">{item.label}</h3>
                   </Link>
                 </div>
               ) : (
