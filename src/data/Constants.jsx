@@ -46,3 +46,21 @@ export const HomeMainSlides = [
     colorClass: "bg-blue-500",
   },
 ];
+
+export const HomeSideSlides = [
+  {
+    label: "نشر سگ آبی",
+    href: "#",
+    colorClass: "bg-amber-500",
+  },
+  {
+    label: "نشر بارانی",
+    href: "#",
+    colorClass: "bg-cyan-500",
+  },
+  {
+    label: "نشر کیهان",
+    href: "#",
+    colorClass: "bg-violet-500",
+  },
+];

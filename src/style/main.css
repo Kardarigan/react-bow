@@ -22,7 +22,8 @@ html {
   transition: visibility 0.5s, opacity 0.1s linear;
 }
 
-.flex-center, .loading {
+.flex-center,
+.loading {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -49,4 +50,20 @@ html {
 .loading-exit {
   opacity: 0;
   pointer-events: none;
-}/*# sourceMappingURL=main.css.map */
+}
+
+.splide__arrow {
+  width: 3rem;
+  height: 66.67%;
+  background-color: #e2e8f0 !important;
+  border-radius: 0.375rem;
+  transition: all 0.3s;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+.splide__arrow--next {
+  right: 0px;
+}
+.splide__arrow--prev {
+  left: 0px;
+} /*# sourceMappingURL=main.css.map */

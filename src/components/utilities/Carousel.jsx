@@ -10,7 +10,7 @@ const Carousel = ({ type = "image", things, options, interval = "2000" }) => {
           return (
             <SplideSlide key={index} data-splide-interval={interval}>
               {type === "image" ? (
-                <div className={item.colorClass + " h-[50vh] min-h-72 block"}>
+                <div className={item.colorClass + " h-[24vw] min-h-72 block"}>
                   <Link to={item.href} className="size-full flex-center">
                     <h3 className="title">{item.label}</h3>
                   </Link>
