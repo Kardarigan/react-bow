@@ -15,9 +15,15 @@ const Carousel = ({ type = "image", things, options, interval = "2000" }) => {
                     <h3 className="title">{item.label}</h3>
                   </Link>
                 </div>
-              ) : (
-                ""
-              )}
+              ) : type === "logo" ? (
+                <a href={item.href} className="flat block p-5">
+                  <img
+                    src={item.logo}
+                    alt="company logo"
+                    className="size-full h-20 object-contain"
+                  />
+                </a>
+              ) : null}
             </SplideSlide>
           );
         })}

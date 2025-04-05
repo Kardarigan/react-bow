@@ -107,6 +107,9 @@
   .card {
     @apply bg text-slate-100 border-2 border-slate-200 size-full flex p-12 rounded-3xl;
   }
+  .flat {
+    @apply border-2 border-b-8 border-slate-500 rounded-2xl active:border-b-2 active:mt-2;
+  }
 }
 @layer utilities {
   .fakeBorderDark {

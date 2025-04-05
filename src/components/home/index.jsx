@@ -1,9 +1,10 @@
-import { Hero } from "..";
+import { Hero, Publishers } from "..";
 
 const Home = () => {
   return (
     <>
       <Hero />
+      <Publishers />
     </>
   );
 };

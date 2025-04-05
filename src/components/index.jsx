@@ -6,5 +6,6 @@ import Carousel from "./utilities/Carousel";
 // ----------------------------------[Home
 import Home from "./home";
 import Hero from "./home/Hero";
+import Publishers from "./home/Publishers";
 
-export { Header, Layout, Navbar, Home, Hero, Carousel };
+export { Header, Layout, Navbar, Home, Hero, Carousel, Publishers };
