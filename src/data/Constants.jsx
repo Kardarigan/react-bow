@@ -68,34 +68,34 @@ export const HomeSideSlides = [
 export const PublishersInfo = [
   {
     logo: "https://content.sportslogos.net/logos/33/798/full/oregon_state_beavers_logo_primary_19612953.png",
-    href: "https://www.digikala.com/",
+    href: "https://www.britannica.com/animal/beaver",
   },
   {
     logo: "https://content.sportslogos.net/logos/33/798/full/oregon_state_beavers_logo_primary_19612953.png",
-    href: "https://www.digikala.com/",
+    href: "https://www.britannica.com/animal/beaver",
   },
   {
     logo: "https://content.sportslogos.net/logos/33/798/full/oregon_state_beavers_logo_primary_19612953.png",
-    href: "https://www.digikala.com/",
+    href: "https://www.britannica.com/animal/beaver",
   },
   {
     logo: "https://content.sportslogos.net/logos/33/798/full/oregon_state_beavers_logo_primary_19612953.png",
-    href: "https://www.digikala.com/",
+    href: "https://www.britannica.com/animal/beaver",
   },
   {
     logo: "https://content.sportslogos.net/logos/33/798/full/oregon_state_beavers_logo_primary_19612953.png",
-    href: "https://www.digikala.com/",
+    href: "https://www.britannica.com/animal/beaver",
   },
   {
     logo: "https://content.sportslogos.net/logos/33/798/full/oregon_state_beavers_logo_primary_19612953.png",
-    href: "https://www.digikala.com/",
+    href: "https://www.britannica.com/animal/beaver",
   },
   {
     logo: "https://content.sportslogos.net/logos/33/798/full/oregon_state_beavers_logo_primary_19612953.png",
-    href: "https://www.digikala.com/",
+    href: "https://www.britannica.com/animal/beaver",
   },
   {
     logo: "https://content.sportslogos.net/logos/33/798/full/oregon_state_beavers_logo_primary_19612953.png",
-    href: "https://www.digikala.com/",
+    href: "https://www.britannica.com/animal/beaver",
   },
 ];

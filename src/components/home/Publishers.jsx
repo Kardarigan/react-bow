@@ -14,7 +14,7 @@ const Publishers = () => {
           autoplay: true,
           pagination: false,
           gap: "2em",
-          perPage: 5,
+          perPage: 6,
           breakpoints: {
             768: {
               perPage: 4,
@@ -23,7 +23,6 @@ const Publishers = () => {
               perPage: 2,
             },
           },
-          focus: "center",
         }}
       />
     </section>

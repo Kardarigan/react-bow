@@ -16,11 +16,15 @@ const Carousel = ({ type = "image", things, options, interval = "2000" }) => {
                   </Link>
                 </div>
               ) : type === "logo" ? (
-                <a href={item.href} className="flat block p-5">
+                <a
+                  href={item.href}
+                  className="flat flex items-center p-5 group"
+                >
+                  <i class="fa-solid fa-triangle -rotate-90 absolute -left-1 opacity-0 group-hover:opacity-100 group-hover:left-4 transition-all text-slate-700 tail duration-300" />
                   <img
                     src={item.logo}
                     alt="company logo"
-                    className="size-full h-20 object-contain"
+                    className="size-full h-14 object-contain group-hover:translate-x-4 transition-all duration-300"
                   />
                 </a>
               ) : null}
