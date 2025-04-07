@@ -27,6 +27,23 @@ const Carousel = ({ type = "image", things, options, interval = "2000" }) => {
                     className="size-full h-14 object-contain group-hover:translate-x-4 transition-all duration-300"
                   />
                 </a>
+              ) : type === "product" ? (
+                <div>
+                  <Link to={item.path}>
+                    <img src={item.cover[0]} alt={item.title + " cover"} />
+                  </Link>
+                  <div>
+                    <h3 className="title">{item.title}</h3>
+                    <div>
+                      <h5>{item.title}</h5>
+                      <div>
+                        <button>
+                          <i className="fa-solid fa-plus" />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               ) : null}
             </SplideSlide>
           );

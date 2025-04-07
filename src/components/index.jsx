@@ -8,4 +8,16 @@ import Home from "./home";
 import Hero from "./home/Hero";
 import Publishers from "./home/Publishers";
 
-export { Header, Layout, Navbar, Home, Hero, Carousel, Publishers };
+// ----------------------------------[Product
+import ProductSection from "./products/ProductSection";
+
+export {
+  Header,
+  Layout,
+  Navbar,
+  Home,
+  Hero,
+  Carousel,
+  Publishers,
+  ProductSection,
+};
