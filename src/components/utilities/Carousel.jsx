@@ -1,6 +1,7 @@
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import { Link } from "react-router-dom";
+import { ProductCard } from "..";
 
 const Carousel = ({ type = "image", things, options, interval = "2000" }) => {
   return (
@@ -28,22 +29,7 @@ const Carousel = ({ type = "image", things, options, interval = "2000" }) => {
                   />
                 </a>
               ) : type === "product" ? (
-                <div>
-                  <Link to={item.path}>
-                    <img src={item.cover[0]} alt={item.title + " cover"} />
-                  </Link>
-                  <div>
-                    <h3 className="title">{item.title}</h3>
-                    <div>
-                      <h5>{item.title}</h5>
-                      <div>
-                        <button>
-                          <i className="fa-solid fa-plus" />
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <ProductCard thing={item} />
               ) : null}
             </SplideSlide>
           );

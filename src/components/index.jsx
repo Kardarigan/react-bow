@@ -10,6 +10,7 @@ import Publishers from "./home/Publishers";
 
 // ----------------------------------[Product
 import ProductSection from "./products/ProductSection";
+import ProductCard from "./products/ProductCard";
 
 export {
   Header,
@@ -20,4 +21,5 @@ export {
   Carousel,
   Publishers,
   ProductSection,
+  ProductCard,
 };
