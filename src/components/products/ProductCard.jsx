@@ -1,10 +1,17 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const ProductCard = ({ thing }) => {
   return (
     <div>
       <div>
-        <img src={thing.cover} alt={thing.title + " cover"} />
+        <Link>
+          <img
+            src={thing.covers[0]}
+            alt={thing.title + " cover"}
+            className="rounded"
+          />
+        </Link>
       </div>
       <div>
         <h3>{thing.title}</h3>
