@@ -1,6 +1,6 @@
 export const Products = [
   {
-    title: "قدم زدن روی ماه با انیشتین",
+    title: "قدم زدن روی ماه با انیشتین اثر جاشوا فوئر",
     author: "جاشوا فوئر",
     price: 450000,
     covers: [

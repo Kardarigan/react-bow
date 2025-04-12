@@ -39,7 +39,7 @@ const Layout = () => {
   return (
     <>
       <Header />
-      <main className="relative" dir="rtl">
+      <main className="relative">
         <div
           className={`loading ${loading ? "loading-enter" : "loading-exit"}`}
         >

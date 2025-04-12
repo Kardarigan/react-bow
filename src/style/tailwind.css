@@ -24,12 +24,6 @@
   .button-outline * {
     @apply bg-transparent;
   }
-  .button-outline-light {
-    @apply text-slate-50  fakeBorderLight hover:bg-slate-50 hover:text-slate-800;
-  }
-  .button-outline-dark {
-    @apply text-slate-950 bg-transparent fakeBorderDark hover:bg-slate-900 hover:text-slate-200;
-  }
   .button-outline-rose {
     @apply text-rose-600 bg-transparent fakeBorderrose hover:bg-rose-600 hover:text-rose-100;
   }

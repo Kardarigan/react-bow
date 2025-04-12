@@ -12,7 +12,7 @@ const header = () => {
   ];
 
   return (
-    <header className="container pt-12 padding-x" dir="rtl">
+    <header className="container pt-12 padding-x">
       <div className="flex-seperate">
         <div className="flex">
           <h6 className="ml-2 bg-rose-500 rounded-full">آپدیت</h6>

@@ -29,7 +29,9 @@ const Carousel = ({ type = "image", things, options, interval = "2000" }) => {
                   />
                 </a>
               ) : type === "product" ? (
-                <ProductCard thing={item} />
+                <div className="flex-center">
+                  <ProductCard thing={item} />
+                </div>
               ) : null}
             </SplideSlide>
           );

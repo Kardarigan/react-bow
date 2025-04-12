@@ -3,7 +3,7 @@ import { PublishersInfo } from "../../data/Constants";
 
 const Publishers = () => {
   return (
-    <section className="case" dir="ltr">
+    <section className="case">
       <Carousel
         type="logo"
         things={PublishersInfo}
