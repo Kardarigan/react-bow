@@ -16,7 +16,10 @@ const Publishers = () => {
           gap: "2em",
           perPage: 6,
           breakpoints: {
-            768: {
+            1200: {
+              perPage: 5,
+            },
+            992: {
               perPage: 4,
             },
             640: {
