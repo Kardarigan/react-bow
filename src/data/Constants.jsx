@@ -99,3 +99,11 @@ export const PublishersInfo = [
     href: "https://www.britannica.com/animal/beaver",
   },
 ];
+
+export const Banners = [
+  {
+    cover:
+      "https://d3525k1ryd2155.cloudfront.net/i/en20/homepage-slides/sci-fi-2025-s-1150w.jpg",
+    href: "#",
+  },
+];
