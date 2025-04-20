@@ -14,7 +14,11 @@ const ProductCard = ({ thing }) => {
         </Link>
       </div>
       <div className="w-full">
-        <h3 className="py-3 title-sm text-start">{thing.title}</h3>
+        <Link>
+          <h3 className="py-3 title-sm text-start line-clamp-2">
+            {thing.title}
+          </h3>
+        </Link>
         <div className="bg-gradient-to-r from-slate-500 to-transparent opacity-50 h-[2px] w-2/5 mr-auto"></div>
         <div className="flex-seperate items-end">
           <button className="button button-rose px-5">

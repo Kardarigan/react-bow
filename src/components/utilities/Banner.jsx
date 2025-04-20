@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Banner = ({ cover, alt = "Banner's Cover", href }) => {
   return (
-    <section className="case h-[40vw] max-h-80">
+    <section className="case h-[20vw] max-h-60">
       <Link to={href}>
         <img
           src={cover}
