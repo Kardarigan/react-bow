@@ -1,7 +1,7 @@
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import { Link } from "react-router-dom";
-import { ProductCard } from "..";
+import { CategoryCard, CategorySection, ProductCard } from "..";
 
 const Carousel = ({ type = "image", things, options, interval = "2000" }) => {
   return (
@@ -21,7 +21,7 @@ const Carousel = ({ type = "image", things, options, interval = "2000" }) => {
                   href={item.href}
                   className="flat flex items-center p-5 group"
                 >
-                  <i class="fa-solid fa-triangle -rotate-90 absolute -left-1 opacity-0 group-hover:opacity-100 group-hover:left-4 transition-all text-slate-700 tail duration-300" />
+                  <i className="fa-solid fa-triangle -rotate-90 absolute -left-1 opacity-0 group-hover:opacity-100 group-hover:left-4 transition-all text-slate-700 tail duration-300" />
                   <img
                     src={item.logo}
                     alt="company logo"
@@ -32,7 +32,11 @@ const Carousel = ({ type = "image", things, options, interval = "2000" }) => {
                 <div className="flex-center">
                   <ProductCard thing={item} />
                 </div>
-              ) : null}
+              ) : (
+                <div className="flex-center">
+                  <CategoryCard thing={item} />
+                </div>
+              )}
             </SplideSlide>
           );
         })}

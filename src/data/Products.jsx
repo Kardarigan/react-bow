@@ -25,7 +25,7 @@ export const Products = [
   },
   {
     title: "48 قانون قدرت اثر رابرت گرین",
-    author: "کرولاین کپنیس",
+    author: "رابرت گرین",
     price: 155000,
     covers: [
       "https://upload.wikimedia.org/wikipedia/en/9/9d/GreeneRobert-48LawsOfPower.jpg",
@@ -33,7 +33,7 @@ export const Products = [
   },
 ];
 
-export const CategoryCard = [
+export const Categories = [
   {
     title: "روانشناسی",
     cover:
