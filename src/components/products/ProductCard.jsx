@@ -24,7 +24,7 @@ const ProductCard = ({ thing }) => {
           <button className="button button-rose px-5">
             <i className="fa-solid fa-plus" />
           </button>
-          <h4 className="text-sm">
+          <h4 className="text-sm flex items-center">
             <span className="text-2xl me-2">{thing.price}</span>تومان
           </h4>
         </div>
