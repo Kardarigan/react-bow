@@ -51,6 +51,7 @@ const Home = () => {
           }}
         />
       </section>
+      <ProductSection title="جدیدترین محصولات" products={Products} />
     </>
   );
 };

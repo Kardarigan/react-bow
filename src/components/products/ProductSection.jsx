@@ -6,10 +6,10 @@ import { Logo } from "../../data/Constants";
 const ProductSection = ({ title, products }) => {
   return (
     <section className="case">
-      <div className="flex-seperate mb-5">
+      <div className="flex-seperate mb-4">
         <div className="flex-center gap-1">
           <img src={Logo.icon} alt="logo" className="w-10" />
-          <h3>{title}</h3>
+          <h3 className="title-sm">{title}</h3>
         </div>
         <Link>
           مشاهده‌ی تمام همه <i className="fa-solid fa-arrow-left ms-2 tail" />
