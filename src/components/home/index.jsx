@@ -1,5 +1,6 @@
 import {
   Banner,
+  BlogSection,
   Carousel,
   CategorySection,
   Hero,
@@ -9,13 +10,14 @@ import {
 import { Products } from "../../data/Products";
 import { Banners, Logo } from "../../data/Constants";
 import { Link } from "react-router-dom";
+import { Blog } from "../../data/Blog";
 
 const Home = () => {
   return (
     <>
       <Hero />
       <Publishers />
-      <ProductSection title="جدیدترین محصولات" products={Products} />
+      <ProductSection title="جدیدترین کتاب‌ها" products={Products} />
       <Banner cover={Banners[0].cover} href={Banners[0].href} />
       <ProductSection title="محبوبترین انتشارات" products={Products} />
       <CategorySection />
@@ -23,7 +25,7 @@ const Home = () => {
         <div className="flex-seperate mb-5">
           <div className="flex-center gap-1">
             <img src={Logo.icon} alt="logo" className="w-10" />
-            <h3>نشر انتحصاری کمان</h3>
+            <h3 className="title-sm">نشر انتحصاری کمان</h3>
           </div>
           <Link>
             مشاهده‌ی تمام همه <i className="fa-solid fa-arrow-left ms-2 tail" />
@@ -51,7 +53,9 @@ const Home = () => {
           }}
         />
       </section>
-      <ProductSection title="جدیدترین محصولات" products={Products} />
+      <ProductSection title="پرفروش ترین‌ها" products={Products} />
+      <Banner cover={Banners[0].cover} href={Banners[0].href} />
+      <BlogSection title="مقالات علمی و آموزشی خوندنی در بٌومگ" blog={Blog} />
     </>
   );
 };

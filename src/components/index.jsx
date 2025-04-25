@@ -1,6 +1,7 @@
 import Layout from "./Layout";
 import Header from "./layout/Header";
 import Navbar from "./layout/Navbar";
+import Footer from "./layout/Footer";
 import Carousel from "./utilities/Carousel";
 import Banner from "./utilities/Banner";
 
@@ -15,7 +16,14 @@ import ProductCard from "./products/ProductCard";
 import CategoryCard from "./products/CategoryCard";
 import CategorySection from "./products/CategorySection";
 
+// ----------------------------------[Blog
+import BlogCard from "./blog/BlogCard";
+import BlogSection from "./blog/BlogSection";
+
 export {
+  Footer,
+  BlogSection,
+  BlogCard,
   CategoryCard,
   CategorySection,
   Header,

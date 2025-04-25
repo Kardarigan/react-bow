@@ -12,7 +12,7 @@ const ProductCard = ({ thing }) => {
           <img
             src={thing.covers[0]}
             alt={thing.title + " cover"}
-            className="w-full"
+            className="size-full bg-fullobject"
           />
         </Link>
       </div>

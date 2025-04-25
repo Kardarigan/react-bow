@@ -71,19 +71,7 @@ export const PublishersInfo = [
     href: "https://www.britannica.com/animal/beaver",
   },
   {
-    logo: "https://content.sportslogos.net/logos/33/798/full/oregon_state_beavers_logo_primary_19612953.png",
-    href: "https://www.britannica.com/animal/beaver",
-  },
-  {
-    logo: "https://content.sportslogos.net/logos/33/798/full/oregon_state_beavers_logo_primary_19612953.png",
-    href: "https://www.britannica.com/animal/beaver",
-  },
-  {
-    logo: "https://content.sportslogos.net/logos/33/798/full/oregon_state_beavers_logo_primary_19612953.png",
-    href: "https://www.britannica.com/animal/beaver",
-  },
-  {
-    logo: "http://codeempire.ir/static/media/logo.88ee73e63ddacc4bab88.png",
+    logo: "http://codeempire.ir/static/media/logo-icon.666311e0d75462dda10d.png",
     href: "http://codeempire.ir/",
   },
 ];

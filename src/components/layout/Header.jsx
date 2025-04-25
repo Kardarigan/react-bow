@@ -30,7 +30,7 @@ const header = () => {
           <i className="fa-solid fa-phone-volume mr-2" />
         </a>
       </div>
-      <nav className="mt-5 flex-seperate">
+      <nav className="mt-5 flex-seperate sticky top-0">
         <Link to="/">
           <img src={Logo.icon_title} alt="logo" className="w-40" />
         </Link>

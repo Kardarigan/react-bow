@@ -1,6 +1,6 @@
 import { Outlet, useLocation } from "react-router-dom";
 import { useState, useEffect, useRef } from "react";
-import { Header } from "./";
+import { Footer, Header } from "./";
 
 const Layout = () => {
   const [loading, setLoading] = useState(false);

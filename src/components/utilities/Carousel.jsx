@@ -1,7 +1,7 @@
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import { Link } from "react-router-dom";
-import { CategoryCard, CategorySection, ProductCard } from "..";
+import { BlogCard, CategoryCard, CategorySection, ProductCard } from "..";
 
 const Carousel = ({ type = "image", things, options, interval = "2000" }) => {
   return (
@@ -31,6 +31,10 @@ const Carousel = ({ type = "image", things, options, interval = "2000" }) => {
               ) : type === "product" ? (
                 <div className="flex-center">
                   <ProductCard thing={item} />
+                </div>
+              ) : type === "blog" ? (
+                <div className="flex-center">
+                  <BlogCard thing={item} />
                 </div>
               ) : (
                 <div className="flex-center">
