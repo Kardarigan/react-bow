@@ -47,14 +47,7 @@ const Layout = () => {
         </div>
         {!loading && <Outlet />}
       </main>
-      <button
-        className={`fixed bottom-16 z-20 right-10 button-dark rounded title-sm size-12 displayTrans ${
-          showBackToTop ? "visible opacity-100" : "invisible opacity-0"
-        }`}
-        onClick={() => window.scrollTo(0, 0)}
-      >
-        <i className="fa-solid fa-chevron-up mt-1" />
-      </button>
+      <Footer />
     </>
   );
 };

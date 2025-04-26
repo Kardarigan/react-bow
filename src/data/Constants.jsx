@@ -83,3 +83,15 @@ export const Banners = [
     href: "#",
   },
 ];
+
+export const AccessLinks = [
+  { label: "صفحه اصلی", href: "#" },
+  { label: "شگفت انگیزشو", href: "#" },
+  { label: "بٌومگ", href: "#" },
+  { label: "فرصت های شغلی", href: "#" },
+  { label: "سوالات متداول", href: "#" },
+  { label: "تماس با ما", href: "#" },
+  { label: "درباره ما", href: "#" },
+  { label: "قوانین و مقررات", href: "#" },
+  { label: "گزارش", href: "#" },
+];

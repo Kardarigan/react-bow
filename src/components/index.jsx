@@ -19,8 +19,10 @@ import CategorySection from "./products/CategorySection";
 // ----------------------------------[Blog
 import BlogCard from "./blog/BlogCard";
 import BlogSection from "./blog/BlogSection";
+import Updates from "./utilities/Updates";
 
 export {
+  Updates,
   Footer,
   BlogSection,
   BlogCard,

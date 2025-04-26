@@ -2,6 +2,11 @@
   font-family: Peyda;
   src: url(../asset/font/Peyda.ttf);
 }
+:root {
+  --color_dark: #171a20;
+  --color_prime: #f43f5e;
+}
+
 * {
   margin: 0;
   padding: 0;

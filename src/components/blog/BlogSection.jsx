@@ -24,6 +24,7 @@ const BlogSection = ({ title, blog }) => {
           arrows: false,
           autoplay: true,
           pagination: false,
+          focus: "center",
           gap: "1em",
           perPage: 3,
           breakpoints: {
@@ -31,6 +32,9 @@ const BlogSection = ({ title, blog }) => {
               perPage: 2,
             },
             768: {
+              perPage: 2,
+            },
+            576: {
               perPage: 1,
             },
           },
