@@ -11,7 +11,7 @@ const Footer = () => {
         </div>
       </section>
       <section className="flex-seperate">
-        <div>
+        <div className="flex gap-5">
           <Updates />
           <button
             className={
@@ -20,6 +20,7 @@ const Footer = () => {
             onClick={() => window.scrollTo(0, 0)}
           >
             <i className="fa-solid fa-chevron-up mt-1" />
+            
           </button>
         </div>
       </section>
