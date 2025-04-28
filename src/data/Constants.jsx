@@ -95,3 +95,24 @@ export const AccessLinks = [
   { label: "قوانین و مقررات", href: "#" },
   { label: "گزارش", href: "#" },
 ];
+
+export const brands = [
+  { label: "اندیشه‌گستر", href: "#" },
+  { label: "نگاه نو", href: "#" },
+  { label: "قلمستان", href: "#" },
+  { label: "پندنامه", href: "#" },
+  { label: "فراسو", href: "#" },
+  { label: "روایت‌نگار", href: "#" },
+  { label: "سخن‌آوران", href: "#" },
+  { label: "طلوع دانش", href: "#" },
+  { label: "افق‌خوان", href: "#" },
+  { label: "افق تازه", href: "#" },
+  { label: "راز قلم", href: "#" },
+  { label: "دانش‌سرا", href: "#" },
+  { label: "سخن‌گستر", href: "#" },
+  { label: "اندیشه‌پرداز", href: "#" },
+  { label: "نور معرفت", href: "#" },
+  { label: "پژواک خرد", href: "#" },
+  { label: "کتاب‌نگار", href: "#" },
+  { label: "سرای دانایی", href: "#" },
+];
