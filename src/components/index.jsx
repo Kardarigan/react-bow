@@ -2,6 +2,7 @@ import Layout from "./Layout";
 import Header from "./layout/Header";
 import Navbar from "./layout/Navbar";
 import Footer from "./layout/Footer";
+import FooterLinks from "./layout/FooterLinks";
 import Carousel from "./utilities/Carousel";
 import Banner from "./utilities/Banner";
 
@@ -22,6 +23,7 @@ import BlogSection from "./blog/BlogSection";
 import Updates from "./utilities/Updates";
 
 export {
+  FooterLinks,
   Updates,
   Footer,
   BlogSection,

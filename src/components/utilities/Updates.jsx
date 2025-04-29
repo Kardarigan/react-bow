@@ -10,7 +10,7 @@ const Updates = () => {
   ];
   return (
     <div className="flex">
-      <h6 className="ml-2 bg-rose-500 rounded-full">آپدیت</h6>
+      <h6 className="me-2 bg-rose-500 rounded-full">آپدیت</h6>
       <p className="text-base max-sm:text-sm">
         <TypeAnimation
           sequence={updates}
