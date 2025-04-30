@@ -1,9 +1,12 @@
 import logo_only from "../asset/layout/logo.png";
 import logo_title from "../asset/layout/logo-title.png";
+import enamad from "../asset/layout/enamad.png";
 
 export const Logo = {
   icon: logo_only,
   icon_title: logo_title,
+  icon_empire:
+    "http://codeempire.ir/static/media/coat-of-arms.205c285c2897da9c80dd.png",
 };
 
 export const NavButtons = [
@@ -132,5 +135,36 @@ export const MainContactInfo = [
     label: "ایمیل پشتیبانی",
     describe: "info@codeempire.ir",
     href: "mailto:info@codeempire.ir",
+  },
+];
+
+export const Badges = [
+  {
+    label: "ارسال رایگان تهران",
+    icon: "fa-solid fa-badge-percent",
+  },
+  {
+    label: "گارانتی بازگشت",
+    icon: "fa-solid fa-wallet",
+  },
+  {
+    icons: [
+      {
+        icon: enamad,
+        href: "#",
+      },
+      {
+        icon: "https://www.digikala.com/statics/img/png/rezi.webp",
+        href: "#",
+      },
+    ],
+  },
+  {
+    label: "مشاوره و پشتیبانی",
+    icon: "fa-solid fa-comment-dots",
+  },
+  {
+    label: "تحویل اکسپرس",
+    icon: "fa-solid fa-location-dot",
   },
 ];
