@@ -96,7 +96,7 @@ export const AccessLinks = [
   { label: "گزارش", href: "#" },
 ];
 
-export const brands = [
+export const Brands = [
   { label: "اندیشه‌گستر", href: "#" },
   { label: "نگاه نو", href: "#" },
   { label: "قلمستان", href: "#" },
@@ -115,4 +115,22 @@ export const brands = [
   { label: "پژواک خرد", href: "#" },
   { label: "کتاب‌نگار", href: "#" },
   { label: "سرای دانایی", href: "#" },
+];
+
+export const MainContactInfo = [
+  {
+    label: "دفتر مرکزی",
+    describe: "تهران - خیابان انقلاب - خیابان ژاندارمری",
+    href: "#",
+  },
+  {
+    label: "شماره های تماس",
+    describe: "02166887898",
+    href: "tel:02166887898",
+  },
+  {
+    label: "ایمیل پشتیبانی",
+    describe: "info@codeempire.ir",
+    href: "mailto:info@codeempire.ir",
+  },
 ];

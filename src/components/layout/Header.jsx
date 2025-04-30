@@ -7,8 +7,8 @@ const header = () => {
     <header className="container pt-12 padding-x">
       <div className="flex-seperate">
         <Updates />
-        <a href="tel:011888888" className="flex items-center">
-          <span className="title mt-2">11888888+</span>
+        <a href="tel:02166887898" className="flex items-center">
+          <span className="title mt-2">2166887898+</span>
           <i className="fa-solid fa-phone-volume mr-2" />
         </a>
       </div>
