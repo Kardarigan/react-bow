@@ -2,13 +2,16 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const ProductCard = ({ thing }) => {
+  const formattedTitle = thing.title.replace(/\s+/g, "-");
+  const path = "/product/" + formattedTitle;
+
   return (
     <div
       className="w-64 p-3 bg-slate-100 rounded-xl shadow-md my-3 group"
       dir="rtl"
     >
       <div className="h-72 overflow-hidden rounded-2xl">
-        <Link>
+        <Link to={path}>
           <img
             src={thing.covers[0]}
             alt={thing.title + " cover"}
@@ -17,7 +20,7 @@ const ProductCard = ({ thing }) => {
         </Link>
       </div>
       <div className="w-full">
-        <Link>
+        <Link to={path}>
           <h3 className="py-3 title-sm text-start line-clamp-2">
             {thing.title}
           </h3>
