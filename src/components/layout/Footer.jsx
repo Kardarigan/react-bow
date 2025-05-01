@@ -13,7 +13,7 @@ const Footer = () => {
       </section>
       <section className="case mt-0">
         <div className="flex-seperate max-lg:flex-col gap-y-5">
-          <div className="w-80 order-last">
+          <div className="w-80 max-lg:order-last">
             <Updates />
           </div>
           <div className="flex gap-5">

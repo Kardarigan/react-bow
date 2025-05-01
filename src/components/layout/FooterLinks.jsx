@@ -22,7 +22,12 @@ const FooterLinks = () => {
       <ul className={`${index === 1 ? "columns-2" : ""} para mt-7`}>
         {links.map(({ label, href }, i) => (
           <li key={i} className={i >= 9 ? "text-end" : ""}>
-            <Link to={href}>{label}</Link>
+            <Link
+              to={href}
+              className="hover:bg-rose-500 transition-all rounded-full"
+            >
+              {label}
+            </Link>
           </li>
         ))}
       </ul>
