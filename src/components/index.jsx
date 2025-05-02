@@ -22,8 +22,10 @@ import SingleProduct from "./products/SingleProduct";
 import BlogCard from "./blog/BlogCard";
 import BlogSection from "./blog/BlogSection";
 import Updates from "./utilities/Updates";
+import ProductInfo from "./products/ProductInfo";
 
 export {
+  ProductInfo,
   SingleProduct,
   FooterLinks,
   Updates,

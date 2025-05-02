@@ -39,14 +39,14 @@ const Layout = () => {
   return (
     <>
       <Header />
-      <main className="relative">
+      <div className="relative">
         <div
           className={`loading ${loading ? "loading-enter" : "loading-exit"}`}
         >
           درحال بارگزاری...
         </div>
         {!loading && <Outlet />}
-      </main>
+      </div>
       <Footer />
     </>
   );
