@@ -25,7 +25,7 @@ const SingleProduct = () => {
             <button className={countButtonClass} onClick={() => setAmount(prev => prev + 1)}>
               <i className="fa-solid fa-plus text-green-400"></i>
             </button>
-            <span className="title-sm">{amount}</span>
+            <div className="min-w-2 relative"><span className="title-sm absolute -top-3">{amount}</span></div>
             <button className={countButtonClass} onClick={() => setAmount(prev => (prev > 1 ? prev - 1 : 1))}>
               <i className="fa-solid fa-minus text-red-400"></i>
             </button>
@@ -34,6 +34,10 @@ const SingleProduct = () => {
             <span className="title">{formattedPrice}</span> تومان
           </h3>
         </div>
+        <button className="button button-dark title-sm mt-8 py-5 flex justify-center items-center gap-1 font-extrabold w-full">
+          <i className="fa-solid fa-plus text-green-400"></i>
+          به سبد خرید
+        </button>
       </section>
       <ProductInfo
         title={title}
