@@ -6,7 +6,7 @@ import { Products } from "../../data/Products";
 const SingleProduct = () => {
   const { product } = useParams();
   const path = product.split("-").join(" ");
-  const { title, author, price, covers } = Products.find(
+  const { title, author, price, rate, covers } = Products.find(
     (e) => e && e.title === path
   );
   var formattedPrice = price
@@ -43,6 +43,7 @@ const SingleProduct = () => {
         title={title}
         author={author}
         price={price}
+        rate={rate}
         cover={covers[0]}
       />
     </main>

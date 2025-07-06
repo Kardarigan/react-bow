@@ -5,7 +5,7 @@ import Footer from "./layout/Footer";
 import FooterLinks from "./layout/FooterLinks";
 import Carousel from "./utilities/Carousel";
 import Banner from "./utilities/Banner";
-
+import Breadcrumb from "./utilities/Breadcrumb";
 // ----------------------------------[Home
 import Home from "./home";
 import Hero from "./home/Hero";
@@ -25,6 +25,7 @@ import Updates from "./utilities/Updates";
 import ProductInfo from "./products/ProductInfo";
 
 export {
+  Breadcrumb,
   ProductInfo,
   SingleProduct,
   FooterLinks,

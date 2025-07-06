@@ -3,6 +3,7 @@ export const Products = [
     title: "قدم زدن روی ماه با انیشتین اثر جاشوا فوئر",
     author: "جاشوا فوئر",
     price: 450000,
+    rate: 5,
     covers: [
       "https://upload.wikimedia.org/wikipedia/en/5/59/Moonwalking_with_einstein.jpg?20190902015140",
     ],
@@ -11,6 +12,7 @@ export const Products = [
     title: "رمان تو (You) اثر کرولاین کپنیس",
     author: "کرولاین کپنیس",
     price: 520000,
+    rate: 5,
     covers: [
       "https://upload.wikimedia.org/wikipedia/en/b/b5/Book_cover_of_Kepnes%27s_2014_novel_%22You%22.png?20190123074525",
     ],
@@ -19,6 +21,7 @@ export const Products = [
     title: "رمان منو دوست داشته باش اثر کرولاین کپنیس",
     author: "کرولاین کپنیس",
     price: 339900,
+    rate: 5,
     covers: [
       "https://upload.wikimedia.org/wikipedia/en/5/55/You_Love_Me_%28Kepnes_novel%29.png?20220824080314",
     ],
@@ -27,6 +30,7 @@ export const Products = [
     title: "48 قانون قدرت اثر رابرت گرین",
     author: "رابرت گرین",
     price: 155000,
+    rate: 5,
     covers: [
       "https://upload.wikimedia.org/wikipedia/en/9/9d/GreeneRobert-48LawsOfPower.jpg",
     ],
