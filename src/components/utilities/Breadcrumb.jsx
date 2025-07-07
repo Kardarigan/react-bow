@@ -26,8 +26,8 @@ const Breadcrumb = () => {
 
                         return (
                             <React.Fragment key={to}>
-                                <span className="mx-2">
-                                    |
+                                <span >
+                                    <i className="fa-solid fa-horizontal-rule rotate-90"></i>
                                 </span>
                                 {isLast ? (
                                     <span className="text-gray-600 line-clamp-1 text-ellipsis">

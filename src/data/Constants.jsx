@@ -70,10 +70,12 @@ export const HomeSideSlides = [
 
 export const PublishersInfo = [
   {
+    name: 'سگ آبی',
     logo: "https://content.sportslogos.net/logos/33/798/full/oregon_state_beavers_logo_primary_19612953.png",
     href: "https://www.britannica.com/animal/beaver",
   },
   {
+    name: 'امپراتوری',
     logo: "http://codeempire.ir/static/media/logo-icon.666311e0d75462dda10d.png",
     href: "http://codeempire.ir/",
   },
