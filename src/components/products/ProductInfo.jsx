@@ -1,7 +1,45 @@
 import React from "react";
 import Breadcrumb from "../utilities/Breadcrumb";
 
-const ProductInfo = ({ title, author, price, rate, cover }) => {
+const ProductInfo = ({ product }) => {
+
+  const {
+    title,
+    author,
+    price,
+    rate,
+    category,
+    covers,
+    publisher,
+    isbn,
+    intro,
+    summary,
+    cover,
+    year
+  } = product
+
+  const info = [
+    {
+      label: 'نویسنده',
+      detail: author
+    },
+    {
+      label: 'ناشر',
+      detail: publisher
+    },
+    {
+      label: 'جلد',
+      detail: cover
+    },
+    {
+      label: 'شابک',
+      detail: isbn
+    },
+    {
+      label: 'امتیاز از 5',
+      detail: isbn
+    },
+  ]
 
   const controls = [
     {
@@ -21,8 +59,14 @@ const ProductInfo = ({ title, author, price, rate, cover }) => {
     },
   ]
 
+  const relatings = [
+    publisher,
+    category,
+    author
+  ]
+
   return (
-    <div className="w-full">
+    <section className="w-full">
       <hr className="w-full" />
       <Breadcrumb />
       <div className="flex-seperate">
@@ -48,7 +92,23 @@ const ProductInfo = ({ title, author, price, rate, cover }) => {
         </div>
       </div>
       <h1 className="title mt-4">{title}</h1>
-    </div>
+      <div className="grid md:grid-cols-2 xl:grid-cols-3 md:mt-8 mt-5">
+        <ul className="">
+          {
+            info.slice(0, 3).map((item, idx) => {
+              return (
+                <li className={`flex-seperate py-2 ${idx !== 2 ? 'border-b' : 'max-lg:border-b'}`}>
+                  <h6 className="text-slate-500">{item.label}</h6>
+                  <h5>{item.detail}</h5>
+                </li>
+              )
+            })
+          }
+        </ul>
+        <p className="text-justify leading-relaxed">{intro}</p>
+        <div></div>
+      </div>
+    </section>
   );
 };
 

@@ -6,20 +6,21 @@ import { Products } from "../../data/Products";
 const SingleProduct = () => {
   const { product } = useParams();
   const path = product.split("-").join(" ");
-  const { title, author, price, rate, covers } = Products.find(
+  const theProduct = Products.find(
     (e) => e && e.title === path
   );
-  var formattedPrice = price
-    ? price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
-    : null;
 
   const countButtonClass = " px-[7px] pt-1 bg-slate-50 rounded-lg";
   const [amount, setAmount] = useState(1)
 
+  var formattedPrice = theProduct.price
+    ? theProduct.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+    : null;
+
   return (
     <main className="case flex gap-5">
       <section>
-        <img src={covers[0]} alt={title} className="rounded-2xl" />
+        <img src={theProduct.covers[0]} alt={theProduct.title} className="w-full h-96 object-cover rounded-2xl" />
         <div className="flex-seperate gap-3 mt-8">
           <div className="bg-slate-200 p-2 rounded-2xl flex items-center gap-x-2">
             <button className={countButtonClass} onClick={() => setAmount(prev => prev + 1)}>
@@ -40,11 +41,7 @@ const SingleProduct = () => {
         </button>
       </section>
       <ProductInfo
-        title={title}
-        author={author}
-        price={price}
-        rate={rate}
-        cover={covers[0]}
+        product={theProduct}
       />
     </main>
   );

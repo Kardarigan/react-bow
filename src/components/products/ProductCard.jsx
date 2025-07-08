@@ -4,6 +4,10 @@ import { Link } from "react-router-dom";
 const ProductCard = ({ thing }) => {
   const formattedTitle = thing.title.replace(/\s+/g, "-");
   const path = "/product/" + formattedTitle;
+  var formattedPrice = thing.price
+    ? thing.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+    : null;
+
 
   return (
     <div
@@ -31,7 +35,7 @@ const ProductCard = ({ thing }) => {
             <i className="fa-solid fa-plus transition-all -translate-x-[5px] -translate-y-[5px] group-hover:translate-x-0 group-hover:translate-y-0 text-slate-900 group-hover:text-slate-50" />
           </button>
           <h4 className="text-sm flex items-center">
-            <span className="text-2xl me-2">{thing.price}</span>تومان
+            <span className="text-2xl me-2">{formattedPrice}</span>تومان
           </h4>
         </div>
       </div>
