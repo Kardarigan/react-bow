@@ -2,7 +2,6 @@
   font-family: Peyda;
   src: url(../asset/font/Peyda.ttf);
 }
-
 :root {
   --color_dark: #171a20;
   --color_prime: #f43f5e;
@@ -28,8 +27,7 @@ html {
   transition: visibility 0.5s, opacity 0.1s linear;
 }
 
-.flex-center,
-.loading {
+.flex-center, .loading {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -49,12 +47,10 @@ html {
   pointer-events: none;
   z-index: 1000;
 }
-
 .loading-enter {
   opacity: 1;
   pointer-events: all;
 }
-
 .loading-exit {
   opacity: 0;
   pointer-events: none;
@@ -68,11 +64,9 @@ html {
   transition: all 0.3s;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
-
 .splide__arrow--next {
   right: 0px;
 }
-
 .splide__arrow--prev {
   left: 0px;
 }
@@ -87,11 +81,8 @@ html {
   -moz-box-shadow: inset 0 -2px 0 0 #f43f5e;
   box-shadow: inset 0 -2px 0 0 #f43f5e;
 }
-
 .link:hover {
   -webkit-box-shadow: inset 0 -22px 0 0 #f43f5e;
   -moz-box-shadow: inset 0 -22px 0 0 #f43f5e;
   box-shadow: inset 0 -22px 0 0 #f43f5e;
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

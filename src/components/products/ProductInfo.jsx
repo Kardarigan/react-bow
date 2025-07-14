@@ -1,5 +1,6 @@
 import React from "react";
 import Breadcrumb from "../utilities/Breadcrumb";
+import { PublishersInfo } from "../../data/Constants";
 
 const ProductInfo = ({ product }) => {
 
@@ -65,11 +66,17 @@ const ProductInfo = ({ product }) => {
     author
   ]
 
+  const relating_labels = [
+    'انتشارات',
+    'از دسته بندی',
+    'نوشته‌ی'
+  ]
+
   return (
     <section className="w-full">
       <hr className="w-full" />
       <Breadcrumb />
-      <div className="flex-seperate">
+      <div className="flex-seperate mt5">
         <h6 className="title">
           <span className="mt-1 me-3">{rate}/5</span>
           {[...Array(parseInt(rate))].map((_, idx) => (
@@ -92,12 +99,12 @@ const ProductInfo = ({ product }) => {
         </div>
       </div>
       <h1 className="title mt-4">{title}</h1>
-      <div className="grid md:grid-cols-2 xl:grid-cols-3 md:mt-8 mt-5">
-        <ul className="">
+      <div className="grid md:grid-cols-3 grid-cols-3 gap-8 md:mt-8 mt-5">
+        <ul className="xl:block md:flex-seperate block max-xl:col-span-3 gap-5">
           {
             info.slice(0, 3).map((item, idx) => {
               return (
-                <li className={`flex-seperate py-2 ${idx !== 2 ? 'border-b' : 'max-lg:border-b'}`}>
+                <li className={`flex-seperate py-2 ${idx !== 2 ? 'border-b' : 'max-xl:border-b'} xl:w-full md:w-1/3`}>
                   <h6 className="text-slate-500">{item.label}</h6>
                   <h5>{item.detail}</h5>
                 </li>
@@ -105,8 +112,34 @@ const ProductInfo = ({ product }) => {
             })
           }
         </ul>
-        <p className="text-justify leading-relaxed">{intro}</p>
-        <div></div>
+        <p className="text-justify leading-relaxed xl:col-span-1 md:col-span-2 col-span-3">{intro}</p>
+        <ul className="md:col-span-1 col-span-3">
+          {
+            relatings.map((item, idx) => {
+              let publisherLogo = null;
+              if (idx === 0) {
+                const thePublisher = PublishersInfo.find(
+                  (e) => e && e.name === item
+                );
+                if (thePublisher) {
+                  publisherLogo = (
+                    <img src={thePublisher.logo} alt={item} className="w-6 h-6 me-2 mb-1" />
+                  );
+                }
+              } return (
+                <li key={idx} className={`py-5 ${idx !== 2 ? 'border-t' : 'max-lg:border-t'} border-slate-300`}>
+                  <a href="#" className="flex items-center group">
+                    {publisherLogo}
+                    {relating_labels[idx]} {' '}
+                    {item}
+                    <i className="fas fa-chevron-left group-hover:text-rose-500 ms-5" />
+                  </a>
+                </li>
+              );
+            })
+
+          }
+        </ul>
       </div>
     </section>
   );

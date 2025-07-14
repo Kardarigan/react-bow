@@ -6,105 +6,138 @@
   .case {
     @apply lg:max-w-[1180px] md:max-w-[950px] sm:max-w-[700px] padding-x mo mx-auto;
   }
+
   .mo {
     @apply lg:mt-24 mt-32;
   }
+
   .container {
     @apply lg:max-w-[1180px] md:max-w-[950px] sm:max-w-[700px] mx-auto p-5;
   }
+
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
+
   .flex-seperate {
     @apply flex justify-between items-center;
   }
+
   .bg {
     @apply bg-gradient-to-bl from-blue-500 to-blue-700 shadow-lg;
   }
+
   .button {
     @apply transition duration-200 lg:text-sm text-center font-semibold backdrop-blur-sm text-sm rounded-xl sm:w-auto inline-block w-full px-10 py-2;
   }
+
   .button-outline * {
     @apply bg-transparent;
   }
+
   .button-outline-rose {
     @apply text-rose-500 bg-transparent fakeBorderRose hover:bg-rose-500 hover:text-rose-100;
   }
+
   .button-light {
     @apply text-slate-900 bg-slate-100 bg-opacity-90 hover:bg-opacity-100;
   }
+
   .button-dark {
     @apply text-slate-100 bg-slate-950 bg-opacity-90 hover:bg-opacity-100;
   }
+
   .button-rose {
     @apply text-slate-100 bg-rose-500 bg-opacity-90 hover:bg-opacity-100;
   }
+
   .bg-fullcenter {
     @apply bg-center bg-cover bg-no-repeat;
   }
+
   .bg-fullobject {
     @apply object-center object-cover;
   }
+
   .navitem {
-    @apply transition text-sm font-semibold rounded px-3 py-2  bg-opacity-0 hover:bg-opacity-40 hover:bg-slate-500 hover:backdrop-blur-sm;
+    @apply transition text-sm font-semibold rounded px-3 py-2 bg-opacity-0 hover:bg-opacity-40 hover:bg-slate-500 hover:backdrop-blur-sm;
   }
+
   .title {
     @apply md:text-3xl text-lg font-extrabold;
   }
+
   .title-res {
     @apply md:text-3xl text-lg font-extrabold;
   }
+
   .title-sm {
     @apply md:text-xl text-lg font-extrabold;
   }
+
   .title-lg {
     @apply md:text-5xl text-3xl font-extrabold;
   }
+
   .title-super {
     @apply lg:text-7xl md:text-5xl text-2xl font-extrabold;
   }
+
   .field {
     @apply bg-slate-200 text-slate-900 border-0 text-sm rounded-xl transition-all duration-100 focus-within:ring-1 focus-within:ring-rose-600 block w-full px-3 py-2;
     @apply autofill:bg-slate-300 autofill:text-rose-900;
   }
+
   .select {
     @apply bg-blue-500 text-blue-50 accent-white border-0 text-sm rounded-full transition-all duration-100 focus-within:ring-0 block w-full p-3 min-w-44;
   }
+
   .label {
     @apply text-slate-700 md:text-sm text-xs font-bold;
   }
+
   .para {
     @apply opacity-90 md:text-sm text-xs text-justify max-w-[800px];
   }
+
   .para-sm {
     @apply opacity-90 md:text-xs text-[8px] text-justify max-w-[800px];
   }
+
   .warn {
     @apply mac-border bg text-slate-50;
   }
+
   .mac-border {
     @apply border-2 border-blue-400 rounded-[25px] px-4;
   }
+
   .mac-bg {
     background: rgb(59, 130, 246);
-    background: linear-gradient(
-      90deg,
-      rgba(59, 130, 246, 1) 0%,
-      rgba(59, 130, 246, 0.3537146931950568) 68%,
-      rgba(59, 130, 246, 0.20976369778923742) 100%
-    );
+    background: linear-gradient(90deg,
+        rgba(59, 130, 246, 1) 0%,
+        rgba(59, 130, 246, 0.3537146931950568) 68%,
+        rgba(59, 130, 246, 0.20976369778923742) 100%);
     @apply px-5 rounded-full inline-block;
   }
+
   .thatch {
     @apply bg-blue-950 border-2 border-blue-800;
   }
+
   .box {
     @apply md:p-10 p-5 mac-border;
   }
+
   .card {
     @apply bg text-slate-100 border-2 border-slate-200 size-full flex p-12 rounded-3xl;
   }
+
   .flat {
     @apply border-2 border-b-8 border-slate-300 rounded-2xl active:border-b-2 active:mt-2 hover:bg-slate-100 transition-colors;
   }
 }
+
 @layer utilities {
   .fakeBorderDark {
     box-shadow: 0 0 0 2px var(--color_dark) inset;
@@ -123,6 +156,7 @@
     background: linear-gradient(109deg, #3b82f6 -20%, transparent 70%);
     @apply pl-5 rounded-full;
   }
+
   .padding {
     @apply md:px-16 px-6 md:py-24 py-12;
   }
@@ -154,13 +188,16 @@
   .info-text {
     @apply font-montserrat text-slate-gray text-lg leading-7;
   }
+
   .pagecenter {
     @apply max-w-[800px] mx-auto pt-24 padding-x;
   }
+
   .size-screen {
     @apply w-screen h-screen;
   }
 }
+
 h1,
 h2,
 h3,
@@ -169,9 +206,11 @@ h5,
 h6 {
   @apply font-bold;
 }
+
 select.field {
   @apply py-2;
 }
+
 textarea.field {
   @apply py-2;
 }
