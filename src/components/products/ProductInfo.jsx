@@ -72,6 +72,19 @@ const ProductInfo = ({ product }) => {
     'نوشته‌ی'
   ]
 
+  const benefits = [
+    {
+      label: 'آماده ارسال',
+      icon: 'fas fa-location-dot'
+    }, {
+      label: 'ارسال رایگان',
+      icon: 'fas fa-truck-fast'
+    }, {
+      label: 'تضمین کیفیت',
+      icon: 'fas fa-badge-check'
+    }
+  ]
+
   return (
     <section className="w-full">
       <hr className="w-full" />
@@ -140,6 +153,20 @@ const ProductInfo = ({ product }) => {
 
           }
         </ul>
+      </div>
+      <div className="flex-seperate gap-x-8 border border-rose-500 p-5 rounded-3xl mt-8">
+        {benefits.map((item, idx) => {
+          return (
+            <>
+              <div className="flex-seperate w-1/3">
+                <h5>{item.label}</h5>
+                <i className={item.icon}></i>
+              </div>
+              {idx != 2 ?
+                <i className="fa-solid fa-horizontal-rule rotate-90"></i> : ''}
+            </>
+          )
+        })}
       </div>
     </section>
   );
