@@ -87,9 +87,9 @@ const ProductInfo = ({ product }) => {
 
   return (
     <section className="w-full">
-      <hr className="w-full" />
       <Breadcrumb />
-      <div className="flex-seperate mt5">
+      <hr className="w-full" />
+      <div className="flex-seperate mt-5">
         <h6 className="title">
           <span className="mt-1 me-3">{rate}/5</span>
           {[...Array(parseInt(rate))].map((_, idx) => (
@@ -140,7 +140,7 @@ const ProductInfo = ({ product }) => {
                   );
                 }
               } return (
-                <li key={idx} className={`py-5 ${idx !== 2 ? 'border-t' : 'max-lg:border-t'} border-slate-300`}>
+                <li key={idx} className={`py-5 border-t ${idx === 0 ? 'xl:border-t-0' : ''} border-slate-300`}>
                   <a href="#" className="flex items-center group">
                     {publisherLogo}
                     {relating_labels[idx]} {' '}
@@ -154,16 +154,16 @@ const ProductInfo = ({ product }) => {
           }
         </ul>
       </div>
-      <div className="flex-seperate gap-x-8 border border-rose-500 p-5 rounded-3xl mt-8">
+      <div className="flex-seperate gap-x-8 border border-rose-500 p-5 rounded-3xl mt-8 lg:float-left">
         {benefits.map((item, idx) => {
           return (
             <>
               <div className="flex-seperate w-1/3">
-                <h5>{item.label}</h5>
-                <i className={item.icon}></i>
+                <h5 className="text-slate-600 text-sm font-thin">{item.label}</h5>
+                <i className={item.icon + ' text-rose-500'}></i>
               </div>
               {idx != 2 ?
-                <i className="fa-solid fa-horizontal-rule rotate-90"></i> : ''}
+                <i className="fa-solid fa-horizontal-rule rotate-90 text-rose-400"></i> : ''}
             </>
           )
         })}

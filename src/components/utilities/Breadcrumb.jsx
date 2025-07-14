@@ -10,7 +10,7 @@ const Breadcrumb = () => {
 
     if (pathnames.length) {
         return (
-            <nav className="text-gray-400 bg-slate-50 py-2">
+            <nav className="text-gray-400 py-2">
                 <div
                     className="flex space-x-2 items-center py-5 para-lil"
                     title="شما اینجا هستید."
