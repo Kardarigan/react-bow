@@ -74,7 +74,7 @@ const ProductInfo = ({ product }) => {
 
   const benefits = [
     {
-      label: 'آماده ارسال',
+      label: 'آماده‌ی ارسال',
       icon: 'fas fa-location-dot'
     }, {
       label: 'ارسال رایگان',
@@ -154,13 +154,13 @@ const ProductInfo = ({ product }) => {
           }
         </ul>
       </div>
-      <div className="flex-seperate gap-x-8 border border-rose-500 p-5 rounded-3xl mt-8 lg:float-left">
+      <div className="flex-seperate gap-x-3 border border-rose-500 p-5 rounded-3xl mt-8 lg:float-left">
         {benefits.map((item, idx) => {
           return (
             <>
               <div className="flex-seperate w-1/3">
-                <h5 className="text-slate-600 text-sm font-thin">{item.label}</h5>
-                <i className={item.icon + ' text-rose-500'}></i>
+                <h5 className="text-slate-600 text-sm font-thin whitespace-nowrap">{item.label}</h5>
+                <i className={item.icon + ' text-rose-500 ms-5'}></i>
               </div>
               {idx != 2 ?
                 <i className="fa-solid fa-horizontal-rule rotate-90 text-rose-400"></i> : ''}
