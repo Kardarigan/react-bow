@@ -6,6 +6,11 @@ import FooterLinks from "./layout/FooterLinks";
 import Carousel from "./utilities/Carousel";
 import Banner from "./utilities/Banner";
 import Breadcrumb from "./utilities/Breadcrumb";
+import Drawer from './utilities/drawer'
+import IntroTab from "./utilities/drawer/IntroTab";
+import ExtraInfoTab from './utilities/drawer/ExtraInfoTab'
+import CommentsTab from './utilities/drawer/CommentsTab'
+
 // ----------------------------------[Home
 import Home from "./home";
 import Hero from "./home/Hero";
@@ -25,6 +30,10 @@ import Updates from "./utilities/Updates";
 import ProductInfo from "./products/ProductInfo";
 
 export {
+  Drawer,
+  IntroTab,
+  ExtraInfoTab,
+  CommentsTab,
   Breadcrumb,
   ProductInfo,
   SingleProduct,

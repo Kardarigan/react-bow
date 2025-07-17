@@ -170,3 +170,4 @@ export const Badges = [
     icon: "fa-solid fa-location-dot",
   },
 ];
+
