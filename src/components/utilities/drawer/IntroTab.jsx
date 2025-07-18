@@ -4,7 +4,7 @@ const IntroTab = ({ content }) => {
             {content.map((item, index) => {
                 if (typeof item === "object" && item.type === "heading") {
                     return (
-                        <h2 key={index} className="text-xl font-bold text-rose-600">
+                        <h2 key={index} className="text-xl font-bold text-slate-700">
                             {item.text}
                         </h2>
                     );
@@ -12,7 +12,7 @@ const IntroTab = ({ content }) => {
 
                 if (Array.isArray(item)) {
                     return (
-                        <ul key={index} className="list-none space-y-2">
+                        <ul key={index} className="list-none space-y-2 text-slate-500">
                             {item.map((li, i) => (
                                 <li key={i}><i className="fa-solid fa-check text-rose-500 me-4"></i> {li}</li>
                             ))}
@@ -20,7 +20,7 @@ const IntroTab = ({ content }) => {
                     );
                 }
 
-                return <p key={index}>{item}</p>;
+                return <p key={index} className="text-slate-500">{item}</p>;
             })}
         </div>
     );
