@@ -24,7 +24,7 @@ const SingleProduct = () => {
 
   return (
     <div className="case flex max-xl:flex-col gap-5 relative">
-      <aside className="sticky top-1">
+      <aside className="xl:sticky top-1">
         <section className="flex max-xl:flex-center xl:flex-col max-md:flex-col gap-8">
           <img src={theProduct.covers[0]} alt={theProduct.title} className="w-72 h-96 object-cover rounded-2xl" />
           <div className="max-md:w-full">
