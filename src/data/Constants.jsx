@@ -172,9 +172,24 @@ export const Badges = [
 ];
 
 export const SortOptions = [
-  'مرتب سازی بر اساس محبوبیت',
-  'مرتب سازی بر اساس میانگین رتبه',
-  'مرتب سازی بر اساس جدیدترین',
-  'مرتب سازی بر اساس هزینه: کم به زیاد',
-  'مرتب سازی بر اساس هزینه: زیاد به کم',
-]
+  {
+    label: 'مرتب سازی بر اساس محبوبیت',
+    function: (products) => [...products].sort((a, b) => b.popularity - a.popularity),
+  },
+  {
+    label: 'مرتب سازی بر اساس میانگین رتبه',
+    function: (products) => [...products].sort((a, b) => b.rate - a.rate),
+  },
+  {
+    label: 'مرتب سازی بر اساس جدیدترین',
+    function: (products) => [...products].sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()),
+  },
+  {
+    label: 'مرتب سازی بر اساس هزینه: کم به زیاد',
+    function: (products) => [...products].sort((a, b) => a.price - b.price),
+  },
+  {
+    label: 'مرتب سازی بر اساس هزینه: زیاد به کم',
+    function: (products) => [...products].sort((a, b) => b.price - a.price),
+  },
+];

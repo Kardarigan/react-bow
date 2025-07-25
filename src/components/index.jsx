@@ -19,6 +19,7 @@ import Publishers from "./home/Publishers";
 // ----------------------------------[Product
 import ProductSection from "./products/ProductSection";
 import ProductCard from "./products/ProductCard";
+import ProductsFeed from "./products/ProductsFeed";
 import CategoryCard from "./products/CategoryCard";
 import CategorySection from "./products/CategorySection";
 import SingleProduct from "./products/SingleProduct";
@@ -60,4 +61,5 @@ export {
   ProductCard,
   Products,
   ProductsSort,
+  ProductsFeed,
 };

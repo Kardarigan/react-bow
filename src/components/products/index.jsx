@@ -1,5 +1,5 @@
-import React from "react";
 import { useParams } from "react-router-dom";
+import {ProductsFeed} from ".."
 
 const Products = () => {
     const { category } = useParams();
@@ -17,6 +17,9 @@ const Products = () => {
                 </h1>
 
             </header>
+            <div>
+                <ProductsFeed/>
+            </div>
         </main>
     </div>;
 };

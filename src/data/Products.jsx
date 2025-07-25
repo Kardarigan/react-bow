@@ -15,6 +15,7 @@ export const Products = [
     cover: 'رقعی',
     year: 2012,
     pages: 150,
+    popularity: 99,
     details: [
       { type: "heading", text: "کتاب ۱۰ آزمون اختصاصی کنکور فرهنگیان قلم چی" },
       "۶۰۰ سوال چهارگزینه‌ای ویژه آزمون فرهنگیان",
@@ -45,6 +46,7 @@ export const Products = [
     cover: 'رقعی',
     year: 2012,
     pages: 150,
+    popularity: 99,
     details: [
       { type: "heading", text: "کتاب ۱۰ آزمون اختصاصی کنکور فرهنگیان قلم چی" },
       "۶۰۰ سوال چهارگزینه‌ای ویژه آزمون فرهنگیان",
@@ -75,6 +77,7 @@ export const Products = [
     cover: 'رقعی',
     year: 2012,
     pages: 150,
+    popularity: 99,
     details: [
       { type: "heading", text: "کتاب ۱۰ آزمون اختصاصی کنکور فرهنگیان قلم چی" },
       "۶۰۰ سوال چهارگزینه‌ای ویژه آزمون فرهنگیان",
@@ -105,6 +108,7 @@ export const Products = [
     cover: 'رقعی',
     year: 2012,
     pages: 150,
+    popularity: 99,
     details: [
       { type: "heading", text: "کتاب ۱۰ آزمون اختصاصی کنکور فرهنگیان قلم چی" },
       "۶۰۰ سوال چهارگزینه‌ای ویژه آزمون فرهنگیان",
@@ -123,7 +127,31 @@ export const Products = [
 
 export const Categories = [
   {
-    title: "روانشناسی",
+    label: "روانشناسی",
+    cover:
+      "https://cdn.psychologytoday.com/sites/default/files/styles/image-article_inline_full_caption/public/field_blog_entry_images/2022-01/black_background.jpg?itok=yS7Q1GW4",
+    description:
+      "کتاب‌های روانشناسی و توسعه فردی برای بهبود خود و درک بهتر انسان‌ها و روابط انسانی و روانشناسی اجتماعی و استفاده از تکنیک‌های روانشناسی در زندگی روزمره.",
+  }, {
+    label: "ادبیات جهان",
+    cover:
+      "https://cdn.psychologytoday.com/sites/default/files/styles/image-article_inline_full_caption/public/field_blog_entry_images/2022-01/black_background.jpg?itok=yS7Q1GW4",
+    description:
+      "کتاب‌های روانشناسی و توسعه فردی برای بهبود خود و درک بهتر انسان‌ها و روابط انسانی و روانشناسی اجتماعی و استفاده از تکنیک‌های روانشناسی در زندگی روزمره.",
+  }, {
+    label: "توسعه فردی",
+    cover:
+      "https://cdn.psychologytoday.com/sites/default/files/styles/image-article_inline_full_caption/public/field_blog_entry_images/2022-01/black_background.jpg?itok=yS7Q1GW4",
+    description:
+      "کتاب‌های روانشناسی و توسعه فردی برای بهبود خود و درک بهتر انسان‌ها و روابط انسانی و روانشناسی اجتماعی و استفاده از تکنیک‌های روانشناسی در زندگی روزمره.",
+  }, {
+    label: "علمی مهارتی",
+    cover:
+      "https://cdn.psychologytoday.com/sites/default/files/styles/image-article_inline_full_caption/public/field_blog_entry_images/2022-01/black_background.jpg?itok=yS7Q1GW4",
+    description:
+      "کتاب‌های روانشناسی و توسعه فردی برای بهبود خود و درک بهتر انسان‌ها و روابط انسانی و روانشناسی اجتماعی و استفاده از تکنیک‌های روانشناسی در زندگی روزمره.",
+  }, {
+    label: "کسب و کار",
     cover:
       "https://cdn.psychologytoday.com/sites/default/files/styles/image-article_inline_full_caption/public/field_blog_entry_images/2022-01/black_background.jpg?itok=yS7Q1GW4",
     description:
