@@ -4,7 +4,7 @@
 
 @layer components {
   .case {
-    @apply lg:max-w-[1180px] md:max-w-[950px] sm:max-w-[700px] padding-x mo mx-auto;
+    @apply lg:max-w-[1280px] md:max-w-[1080px] sm:max-w-[800px] padding-x mo mx-auto;
   }
 
   .mo {
@@ -12,7 +12,7 @@
   }
 
   .container {
-    @apply lg:max-w-[1180px] md:max-w-[950px] sm:max-w-[700px] mx-auto p-5;
+    @apply lg:max-w-[1280px] md:max-w-[1080px] sm:max-w-[800px] mx-auto p-5;
   }
 
   .flex-center {

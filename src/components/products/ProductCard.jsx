@@ -1,24 +1,26 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const ProductCard = ({ thing }) => {
-  const formattedTitle = thing.title.replace(/\s+/g, "-");
+const ProductCard = ({ product, feed = false }) => {
+  if (!product) return null;
+  const formattedTitle = product.title.replace(/\s+/g, "-");
   const path = "/product/" + formattedTitle;
-  var formattedPrice = thing.price
-    ? thing.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+  var formattedPrice = product.price
+    ? product.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
     : null;
-
 
   return (
     <div
-      className="w-64 p-3 bg-slate-100 rounded-xl shadow-md my-3 group"
+      className={`group w-64 ${
+        feed ? "" : "p-3 my-3 bg-slate-100 rounded-xl shadow-md"
+      }`}
       dir="rtl"
     >
       <div className="h-72 overflow-hidden rounded-2xl">
         <Link to={path}>
           <img
-            src={thing.covers[0]}
-            alt={thing.title + " cover"}
+            src={product.covers[0]}
+            alt={product.title + " cover"}
             className="size-full bg-fullobject"
           />
         </Link>
@@ -26,7 +28,7 @@ const ProductCard = ({ thing }) => {
       <div className="w-full">
         <Link to={path}>
           <h3 className="py-3 title-sm text-start line-clamp-2">
-            {thing.title}
+            {product.title}
           </h3>
         </Link>
         <div className="bg-gradient-to-r from-slate-500 to-transparent opacity-50 h-[2px] w-2/5 mr-auto"></div>
