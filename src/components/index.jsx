@@ -6,10 +6,10 @@ import FooterLinks from "./layout/FooterLinks";
 import Carousel from "./utilities/Carousel";
 import Banner from "./utilities/Banner";
 import Breadcrumb from "./utilities/Breadcrumb";
-import Drawer from './utilities/drawer'
+import Drawer from "./utilities/drawer";
 import IntroTab from "./utilities/drawer/IntroTab";
-import ExtraInfoTab from './utilities/drawer/ExtraInfoTab'
-import CommentsTab from './utilities/drawer/CommentsTab'
+import ExtraInfoTab from "./utilities/drawer/ExtraInfoTab";
+import CommentsTab from "./utilities/drawer/CommentsTab";
 
 // ----------------------------------[Home
 import Home from "./home";
@@ -34,7 +34,11 @@ import BlogSection from "./blog/BlogSection";
 import Updates from "./utilities/Updates";
 import ProductInfo from "./products/ProductInfo";
 
+// ----------------------------------[Hooks
+import useWindowWidth from "./hooks/useWindowWidth";
+
 export {
+  useWindowWidth,
   Drawer,
   IntroTab,
   ExtraInfoTab,
