@@ -1,8 +1,10 @@
 import { useState, useEffect } from "react";
 import { ProductCard, ProductsSort, useWindowWidth } from "..";
 import { Products } from "../../data/Products";
+import { useParams } from "react-router-dom";
 
 const Feed = () => {
+  const { category } = useParams();
   const [products, setProducts] = useState(Products);
   const [sortedProducts, setSortedProducts] = useState(Products);
   const screenWidth = useWindowWidth();
@@ -12,9 +14,22 @@ const Feed = () => {
   }, [products]);
 
   return (
-    <section>
-      <ProductsSort products={products} onSort={setSortedProducts} />
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-5 mt-6">
+    <main>
+      <header className="flex max-md:flex-col">
+        <h1 className="title-lg">
+          {category == null ? (
+            "فروشگاه بُو کتاب"
+          ) : (
+            <>
+              خرید کتاب
+              <br />
+              {category}
+            </>
+          )}
+        </h1>
+        <ProductsSort products={products} onSort={setSortedProducts} />
+      </header>
+      <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-5 mt-6">
         {sortedProducts.map((product, idx) => {
           const index = idx + 1;
           let isLastItem = false;
@@ -44,8 +59,8 @@ const Feed = () => {
             </div>
           );
         })}
-      </div>
-    </section>
+      </section>
+    </main>
   );
 };
 
