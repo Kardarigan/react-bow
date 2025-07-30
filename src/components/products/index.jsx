@@ -1,12 +1,41 @@
-import { ProductsFeed } from "..";
+import { useState, useEffect } from "react";
+import { ProductsSort, ProductsFeed } from "..";
+import { Products } from "../../data/Products";
+import { useParams } from "react-router-dom";
 
-const Products = () => {
+const ProductsPage = () => {
+  const { category } = useParams();
+
+  const [products, setProducts] = useState(Products);
+  const [sortedProducts, setSortedProducts] = useState([]);
+
+  useEffect(() => {
+    setSortedProducts(Products);
+  }, []);
+
   return (
     <div className="case flex gap-5 relative">
       <aside></aside>
-      <ProductsFeed />
+      <main>
+        <header className="flex max-md:flex-col">
+          <h1 className="title-lg">
+            {category == null ? (
+              "فروشگاه بُو کتاب"
+            ) : (
+              <>
+                خرید کتاب
+                <br />
+                {category}
+              </>
+            )}
+          </h1>
+          <ProductsSort products={products} onSort={setSortedProducts} />
+        </header>
+
+        <ProductsFeed products={sortedProducts} />
+      </main>
     </div>
   );
 };
 
-export default Products;
+export default ProductsPage;

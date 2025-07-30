@@ -25,7 +25,7 @@ import CategorySection from "./products/CategorySection";
 import SingleProduct from "./products/SingleProduct";
 
 // ----------------------------------[Products
-import Products from "./products";
+import ProductsPage from "./products";
 import ProductsSort from "./products/ProductsSort";
 
 // ----------------------------------[Blog
@@ -63,7 +63,7 @@ export {
   Publishers,
   ProductSection,
   ProductCard,
-  Products,
+  ProductsPage,
   ProductsSort,
   ProductsFeed,
 };
