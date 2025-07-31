@@ -4,8 +4,6 @@ import { Link } from "react-router-dom";
 import { BlogCard, CategoryCard, ProductCard } from "..";
 
 const Carousel = ({ type = "image", things, options, interval = "2000" }) => {
-  console.log(things);
-
   return (
     <Splide aria-label="infantry-class-slider" dir="ltr" options={options}>
       {Array.isArray(things) &&
