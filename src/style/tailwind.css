@@ -200,21 +200,19 @@
 }
 
 
-/* Apply styles to headings not inside a <footer> */
-:not(footer) h1,
-:not(footer) h2,
-:not(footer) h3,
-:not(footer) h4,
-:not(footer) h5,
-:not(footer) h6 {
+
+#main h1,
+#main h2,
+#main h3,
+#main h4,
+#main h5,
+#main h6 {
   @apply font-bold text-slate-800;
 }
 
-/* Apply styles to <p> tags not inside a <footer> */
-:not(footer) p {
+#main p {
   @apply text-slate-700;
 }
-
 
 select.field {
   @apply py-2;

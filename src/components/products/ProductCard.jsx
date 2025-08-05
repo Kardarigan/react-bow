@@ -9,8 +9,6 @@ const ProductCard = ({ product, feed = false }) => {
     ? product.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
     : null;
 
-  console.log(8466666666666665);
-
   return (
     <div
       className={`group w-64 ${
