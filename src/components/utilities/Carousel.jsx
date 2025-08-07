@@ -30,7 +30,7 @@ const Carousel = ({ type = "image", things, options, interval = "2000" }) => {
                 </a>
               ) : type === "product" ? (
                 <div className="flex-center">
-                  <ProductCard thing={item} />
+                  <ProductCard product={item} />
                 </div>
               ) : type === "blog" ? (
                 <div className="flex-center">

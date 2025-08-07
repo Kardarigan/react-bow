@@ -17,7 +17,7 @@ const ProductsPage = () => {
     <div className="case flex gap-5 relative">
       <aside></aside>
       <main>
-        <header className="flex max-md:flex-col">
+        <header className="flex md:items-center max-md:flex-col gap-12">
           <h1 className="title-lg">
             {category == null ? (
               "فروشگاه بُو کتاب"
@@ -31,7 +31,6 @@ const ProductsPage = () => {
           </h1>
           <ProductsSort products={products} onSort={setSortedProducts} />
         </header>
-
         <ProductsFeed products={sortedProducts} />
       </main>
     </div>

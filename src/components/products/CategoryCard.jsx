@@ -2,9 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const CategoryCard = ({ thing }) => {
-  const href = '/products/' + thing.label
-  console.log(href);
-  
+  const href = "/products/" + thing.label;
+
   return (
     <div className="w-64 p-3 bg-slate-100 rounded-xl" dir="rtl">
       <Link to={href}>
